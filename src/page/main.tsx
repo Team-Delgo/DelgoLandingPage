@@ -1,22 +1,13 @@
 import React from "react";
-import logo from "../common/icons/logo.svg";
-import footprint from "../common/icons/footprint.svg";
 import qr from "../common/icons/qr.svg";
 import image1 from "../common/images/image1.png";
 
 function Main() {
   return (
-    <div className="bg-gradient-to-bl from-purple-200 via-transparent to-transparent h-screen w-screen overflow-hidden">
-      <div className="flex pt-[122px] w-screen justify-between">
-        <img className=" ml-[200px]" src={logo} />
-        <div className="flex items-center mr-[127.5px] bg-white rounded-[72px] px-[35px] py-[15px] leading-[150‰] text-[#3D2582] font-bold text-[24px]">
-          앱 다운로드
-          <img className="ml-[10px] w-[30px]" src={footprint} />
-        </div>
-      </div>
-      <div className="flex pt-[393px] ml-[328.66px] justify-center">
+    <div className="bg-gradient-to-bl from-purple-200 via-transparent to-transparent w-screen overflow-hidden ">
+      <div className="flex pt-[340px] justify-center">
         <div className="mt-[78px]">
-          <div className="text-[#8167CD] font-bold text-[24px] leading-[150%] mb-[22.22px]">
+          <div className="text-[rgb(129,103,205)] font-bold text-[24px] leading-[150%] mb-[22.22px]">
             반려견 동반 장소
           </div>
           <div className="text-[#3D2582] font-bold text-[64px] leading-[150%] mb-[35.78px] mr-[109.34px]">
