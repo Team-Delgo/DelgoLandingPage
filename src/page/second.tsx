@@ -3,11 +3,13 @@ import image2 from "../common/images/image2.png";
 import cert from "../common/icons/cert.svg";
 import cafe from "../common/icons/cafe.svg";
 import bookmark from "../common/icons/bookmark.svg";
+import background from "../common/images/background.png";
 
 function Second() {
   return (
     <div className=" overflow-hidden">
-      <div className="flex pt-[393px] justify-center">
+      <img className="z-[-10] h-[2393px] absolute" src={background} />
+      <div className="flex pt-[393px] justify-center z-50 ">
         <div className="mt-[78px]">
           <div className="text-[#8167CD] font-bold text-[24px] leading-[150%] mb-[22.22px]">
             나만의 반려견 지도

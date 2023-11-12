@@ -24,7 +24,7 @@ function App() {
     };
   }, []);
 
-  const backgroundOpacity = scroll >= 10 ? 100 : 0; // 스크롤 위치에 따라 opacity를 설정합니다.
+  const backgroundOpacity = scroll >= 10 ? 10 : 0; // 스크롤 위치에 따라 opacity를 설정합니다.
 
   return (
     <div className="overflow-x-hidden">
