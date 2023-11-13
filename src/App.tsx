@@ -1,8 +1,8 @@
 import React from "react";
 import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import logo from "./common/icons/logo.svg";
-import footprint from "./common/icons/footprint.svg";
+import delgoLogo from "./common/icons/delgoLogo.svg";
+import dogFootPrint from "./common/icons/dogFootPrint.svg";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { useEffect, useState } from "react";
 import Main from "./page/main";
@@ -33,11 +33,11 @@ function App() {
           className={`bg-white bg-opacity-${backgroundOpacity} flex fixed pt-[70px] w-screen justify-between h-[156px]`}
         >
           <div>
-            <img className=" ml-[200px]" src={logo} />
+            <img className=" ml-[200px]" src={delgoLogo} />
           </div>
           <div className="mb-[15px] flex items-center mr-[127.5px] border-[2px] border-[#DDD1FE] bg-white rounded-[72px] px-[35px] py-[15px] leading-[150‰] text-[#3D2582] font-bold text-[24px]">
             앱 다운로드
-            <img className="ml-[10px] w-[30px]" src={footprint} />
+            <img className="ml-[10px] w-[30px]" src={dogFootPrint} />
           </div>
         </div>
         <Main />

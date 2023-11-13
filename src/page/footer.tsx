@@ -1,8 +1,8 @@
 import React from "react";
-import google from "../common/icons/googlestore.svg";
-import apple from "../common/icons/applestore.svg";
-import insta from "../common/icons/instagram.svg";
-import share from "../common/icons/share.svg";
+import delgoGooglePlay from "../common/icons/delgoGooglePlay.svg";
+import delgoAppStore from "../common/icons/delgoAppStore.svg";
+import delgoInstagram from "../common/icons/delgoInstagram.svg";
+import shareDelgoUrl from "../common/icons/shareDelgoUrl.svg";
 
 function Footer() {
   return (
@@ -30,22 +30,22 @@ function Footer() {
         <div>델고 앱 다운로드</div>
         <div className="flex mt-[21.52px]">
           <div className="flex bg-[#7A5CCF] px-[61px] py-[14px] rounded-[12px] mr-[14px] justify-center align-middle">
-            <img src={apple} />
+            <img src={delgoAppStore} />
             <div className="ml-[11px] text-white font-light whitespace-nowrap">
               App Store
             </div>
           </div>
           <div className="flex bg-[#7A5CCF] px-[57px] py-[14px] rounded-[12px] mr-[14px] justify-center align-middle">
-            <img src={google} />
+            <img src={delgoGooglePlay} />
             <div className="ml-[11px] text-white font-light whitespace-nowrap">
               Google Store
             </div>
           </div>
         </div>
         <div className="flex mt-[73.37px]">
-          <img className="mr-[36px]" src={insta} />
+          <img className="mr-[36px]" src={delgoInstagram} />
 
-          <img src={share} />
+          <img src={shareDelgoUrl} />
         </div>
       </div>
     </div>

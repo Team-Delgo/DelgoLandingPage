@@ -1,5 +1,5 @@
 import React from "react";
-import image3 from "../common/images/image3.png";
+import myPetHistory from "../common/images/myPetHistory.png";
 function Third() {
   return (
     <div className="bg-gradient-to-t from-[#E3DCFF] via-transparent to-transparent w-screen overflow-hidden">
@@ -13,7 +13,7 @@ function Third() {
         델고에서 날짜, 활동별로 강아지와의 추억을 확인 할 수 있어요.
       </div>
       <div className="flex justify-center h-[715px]">
-        <img src={image3} />
+        <img src={myPetHistory} />
       </div>
       <div className="h-[337px]"></div>
     </div>

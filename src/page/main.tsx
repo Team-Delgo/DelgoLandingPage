@@ -1,6 +1,6 @@
 import React from "react";
-import qr from "../common/icons/qr.svg";
-import image1 from "../common/images/image1.png";
+import delgoAppQR from "../common/icons/delgoAppQR.svg";
+import petFriendlyMap from "../common/images/petFriendlyMap.png";
 
 function Main() {
   return (
@@ -19,7 +19,7 @@ function Main() {
             장소를 저장하여 강아지 지도를 만들고 이웃 반려인들과 공유해요.
           </div>
           <div className="flex items-end">
-            <img src={qr} />
+            <img src={delgoAppQR} />
             <div className="text-[24px] ml-[26px]">
               앱다운받고
               <br />더 많은 장소 보기
@@ -27,7 +27,7 @@ function Main() {
           </div>
         </div>
         <div>
-          <img className="w-[611px] h-[986px]" src={image1} />
+          <img className="w-[611px] h-[986px]" src={petFriendlyMap} />
         </div>
       </div>
       {/* <div>
