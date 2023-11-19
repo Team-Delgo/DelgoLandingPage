@@ -1,6 +1,6 @@
 import React from "react";
 import petFriendlyPlace from "../common/images/petFriendlyPlace.png";
-import visitDelgo from "../common/icons/visitDelgo.svg";
+import visitDelgo from "../common/images/visitDelgo.png";
 import petFriendlyCafe from "../common/icons/petFriendlyCafe.svg";
 import savedPlace from "../common/icons/savedPlace.svg";
 import background from "../common/images/background.png";
@@ -20,7 +20,7 @@ function Second() {
           </div>
           <div className="">
             <div className="flex mb-[11px] border-solid border-[2px] rounded-[80px] pt-[34px] pb-[26px] pl-[30px] w-[530px] bg-opacity-25 bg-white shadow-sm">
-              <img src={visitDelgo} />
+              <img className="h-[97px]" src={visitDelgo} />
               <div className="pl-[32px]">
                 <div className="text-[#3D2582] text-[28px] font-bold mb-[9px]">
                   지도에 방문기록 남기기
