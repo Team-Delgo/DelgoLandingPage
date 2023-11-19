@@ -4,28 +4,20 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import delgoLogo from "./common/icons/delgoLogo.svg";
 import dogFootPrint from "./common/icons/dogFootPrint.svg";
 import { QueryClient, QueryClientProvider } from "react-query";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import Main from "./page/main";
 import Second from "./page/second";
 import Third from "./page/third";
 import Footer from "./page/footer";
+import useApp from "./page/App.hook";
 
 function App() {
+  const {
+    state: { backgroundOpacity },
+    action: { navigateToDownload },
+  } = useApp();
+
   const queryClient = new QueryClient();
-  const [scroll, setScroll] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScroll(window.scrollY);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const backgroundOpacity = scroll >= 10 ? 10 : 0; // 스크롤 위치에 따라 opacity를 설정합니다.
-
   return (
     <div className="overflow-x-hidden">
       <QueryClientProvider client={queryClient}>
@@ -35,7 +27,10 @@ function App() {
           <div>
             <img className=" ml-[200px]" src={delgoLogo} />
           </div>
-          <div className="mb-[15px] flex items-center mr-[127.5px] border-[2px] border-[#DDD1FE] bg-white rounded-[72px] px-[35px] py-[15px] leading-[150‰] text-[#3D2582] font-bold text-[24px]">
+          <div
+            className="mb-[15px] flex items-center mr-[127.5px] border-[2px] border-[#DDD1FE] bg-white rounded-[72px] px-[35px] py-[15px] leading-[150‰] text-[#3D2582] font-bold text-[24px]"
+            onClick={navigateToDownload}
+          >
             앱 다운로드
             <img className="ml-[10px] w-[30px]" src={dogFootPrint} />
           </div>
