@@ -2,7 +2,6 @@ import { useEffect, useRef, useState, useCallback } from "react";
 function useApp() {
   const [scroll, setScroll] = useState(0);
   const [backgroundOpacity, setBackgroundOpacity] = useState(0);
-
   const handleScroll = useCallback(() => {
     requestAnimationFrame(() => {
       const newScroll = window.scrollY;
@@ -10,11 +9,13 @@ function useApp() {
         setScroll(newScroll);
         setBackgroundOpacity(10);
       } else if (newScroll == 0 && scroll !== 0) {
+        console.log("check");
         setScroll(0);
         setBackgroundOpacity(0);
       }
     });
   }, [scroll]);
+  console.log(backgroundOpacity);
   const navigateToDownload = () => {
     window.location.href = "http://go.delgo.pet";
   };
